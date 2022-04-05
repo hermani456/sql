@@ -6,7 +6,7 @@ CREATE DATABASE Post;
 -- contenido y descripción.
 
 CREATE TABLE post(
-   id bigserial NOT NULL,
+   id serial NOT NULL primary key,
    nombre_de_usuario varchar(50) NOT NULL,
    fecha_de_creacion DATE NOT NULL,
    contenido varchar(150) NOT NULL,
@@ -51,11 +51,40 @@ VALUES ('Carlos', date '2022-03-01', 'hola', 'hola', 'saludo');
 -- creación y contenido, que se relacione con la tabla posts.
 
 CREATE TABLE comentarios(
-   id bigserial NOT NULL,
+   id smallint NOT NULL,
    fecha DATE NOT NULL,
    hora_de_creacion TIME NOT NULL,
-   contenido varchar(150) NOT NULL
+   contenido varchar(150) NOT NULL,
+   FOREIGN KEY (id) REFERENCES post(id)
 );
+
+-- Crear 2 comentarios para el post de "Pamela" y 4 para "Carlos"
+
+INSERT INTO comentarios (id, fecha, hora_de_creacion, contenido)
+VALUES ('1', date '2022-03-01', time '12:00:00', 'hola comentario');
+
+INSERT INTO comentarios (id, fecha, hora_de_creacion, contenido)
+VALUES ('1', date '2022-03-01', time '12:30:00', 'hola comentario 2');
+
+INSERT INTO comentarios (id, fecha, hora_de_creacion, contenido)
+VALUES ('6', date '2022-03-01', time '13:30:00', 'hola comentario carlos');
+
+INSERT INTO comentarios (id, fecha, hora_de_creacion, contenido)
+VALUES ('6', date '2022-03-01', time '14:30:00', 'hola comentario carlos 2');
+
+-- Crear un nuevo post para "Margarita".
+
+INSERT INTO post (nombre_de_usuario, fecha_de_creacion, contenido, descripcion, titulo)
+VALUES ('Margarita', date '2022-04-01', 'hola', 'hola', 'saludo');
+
+-- Ingresar 5 comentarios para el post de Margarita.
+
+INSERT INTO comentarios (id, fecha, hora_de_creacion, contenido)
+VALUES ('7', date '2022-04-01', time '15:30:00', 'hola comentario Margarita');
+
+INSERT INTO comentarios (id, fecha, hora_de_creacion, contenido)
+VALUES ('7', date '2022-05-01', time '16:30:00', 'hola comentario Margarita 2');
+
 
 
 
