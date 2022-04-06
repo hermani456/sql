@@ -74,6 +74,12 @@ VALUES ('6', '2022-03-01', TIME '13:30:00', 'hola comentario carlos');
 INSERT INTO comentarios (post_id, fecha, hora_creacion, contenido)
 VALUES ('6', '2022-03-01', TIME '14:30:00', 'hola comentario carlos 2');
 
+INSERT INTO comentarios (post_id, fecha, hora_creacion, contenido)
+VALUES ('6', '2022-03-01', TIME '13:31:00', 'hola comentario carlos 3');
+
+INSERT INTO comentarios (post_id, fecha, hora_creacion, contenido)
+VALUES ('6', '2022-03-01', TIME '14:32:00', 'hola comentario carlos 4');
+
 -- Crear un nuevo post para "Margarita".
 
 INSERT INTO post (nombre_usuario, fecha_creacion, contenido, descripcion, titulo)
@@ -82,7 +88,16 @@ VALUES ('Margarita', '2022-04-01', 'hola', 'hola', 'saludo');
 -- Ingresar 5 comentarios para el post de Margarita.
 
 INSERT INTO comentarios (post_id, fecha, hora_creacion, contenido)
-VALUES ('7', '2022-04-01', TIME '15:30:00', 'hola comentario Margarita');
+VALUES ('7', '2022-04-01', TIME '15:31:00', 'hola comentario Margarita');
 
 INSERT INTO comentarios (post_id, fecha, hora_creacion, contenido)
-VALUES ('7', '2022-05-01', TIME '16:30:00', 'hola comentario Margarita 2');
+VALUES ('7', '2022-05-01', TIME '16:32:00', 'hola comentario Margarita 2');
+
+INSERT INTO comentarios (post_id, fecha, hora_creacion, contenido)
+VALUES ('7', '2022-04-02', TIME '15:33:00', 'hola comentario Margarita 3');
+
+INSERT INTO comentarios (post_id, fecha, hora_creacion, contenido)
+VALUES ('7', '2022-05-03', TIME '16:34:00', 'hola comentario Margarita 4');
+
+INSERT INTO comentarios (post_id, fecha, hora_creacion, contenido)
+VALUES ('7', '2022-05-04', TIME '16:35:00', 'hola comentario Margarita 5');
