@@ -28,8 +28,9 @@ ADD titulo VARCHAR(25);
 
 -- Agregar título a las publicaciones ya ingresadas.
 
-UPDATE post SET titulo = 'saludo' WHERE nombre_de_usuario = 'Pamela';
-UPDATE post SET titulo = 'despedida' WHERE nombre_de_usuario = 'Carlos';
+UPDATE post SET titulo = 'saludo' WHERE id = '1';
+UPDATE post SET titulo = 'saludo2' WHERE id = '2';
+UPDATE post SET titulo = 'despedida' WHERE id = '3';
 
 -- Insertar 2 post para el usuario "Pedro".
 
@@ -40,7 +41,7 @@ VALUES ('Pedro', date '2021-12-31', 'chao', 'chao', 'despedida');
 
 -- Eliminar el post de Carlos.
 
-DELETE FROM post WHERE nombre_de_usuario = 'Carlos';
+DELETE FROM post WHERE id = '3';
 
 -- Ingresar un nuevo post para el usuario "Carlos".
 
@@ -84,9 +85,3 @@ VALUES ('7', date '2022-04-01', time '15:30:00', 'hola comentario Margarita');
 
 INSERT INTO comentarios (id, fecha, hora_de_creacion, contenido)
 VALUES ('7', date '2022-05-01', time '16:30:00', 'hola comentario Margarita 2');
-
-
-
-
-
-
