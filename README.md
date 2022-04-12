@@ -8,7 +8,7 @@ Desafio desarrollado por un grupo de estudiantes dentro del Bootcamp Fullstack J
 - Clave primaria y foránea
 - Creación de tablas e importacion datos CSV.
 - Consultas 
-- JOINS
+- SQL Joins
 
 ### Quiénes contribuyeron
 
