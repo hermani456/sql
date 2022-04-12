@@ -1,6 +1,6 @@
-# Desafio top100  (PostgreSQL)
+Desafios SQL
 
-### Descripción proyecto
+### Descripción
 Desafio desarrollado por un grupo de estudiantes dentro del Bootcamp Fullstack Javascript Trainee al año 2022.
 
 ### Contenidos aplicados
