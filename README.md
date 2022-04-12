@@ -1,4 +1,4 @@
-##Desafios SQL
+## Desafios SQL
 
 ### Descripción
 Desafio desarrollado por un grupo de estudiantes dentro del Bootcamp Fullstack Javascript Trainee al año 2022.
