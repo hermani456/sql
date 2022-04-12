@@ -1,7 +1,7 @@
 ## Desafios SQL
 
 ### Descripción
-Desafio desarrollado por un grupo de estudiantes dentro del Bootcamp Fullstack Javascript Trainee al año 2022.
+Desafios SQL utilizando postgresql.
 
 ### Contenidos aplicados
 - Tipos de datos
