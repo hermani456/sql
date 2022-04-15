@@ -13,6 +13,7 @@ psql -U postgres unidad2 < C:/Users/diego/Desktop/sql_db/unidad2.sql
 
 BEGIN TRANSACTION;
 INSERT INTO compra (id, cliente_id, fecha) VALUES (33, 1, now());
+-- INSERT INTO detalle_compra (producto_id, compra_id, cantidad) VALUES (9, 33, 5);
 UPDATE producto SET stock = stock - 5 WHERE id = 9;
 COMMIT;
 
@@ -46,7 +47,7 @@ ROLLBACK;
 
 -- e. Confirmar que se restauró la información, sin considerar la inserción del
 -- punto b.
-SELECT * FROM cliente;
+SELECT * FROM cliente; 
 
 -- f. Habilitar de nuevo el AUTOCOMMIT.
 \set AUTOCOMMIT on
