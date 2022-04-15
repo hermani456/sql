@@ -41,7 +41,7 @@ VALUES ('Pedro', '2021-12-31', 'chao', 'chao', 'despedida');
 
 -- Eliminar el post de Carlos.
 
-DELETE FROM post WHERE id = '3';
+DELETE FROM post WHERE id = 3;
 
 -- Ingresar un nuevo post para el usuario "Carlos".
 

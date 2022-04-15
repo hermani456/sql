@@ -69,15 +69,3 @@ SELECT
    MAX (LENGTH(pelicula)) AS longitud_titulo_max
 FROM
    peliculas;
-
-
--- SELECT
---    pelicula,
---    MAX (LENGTH(pelicula)) AS longitud_titulo_max
--- FROM
---    peliculas
--- GROUP BY
---    pelicula
--- ORDER BY
---    longitud_titulo_max DESC;
-
