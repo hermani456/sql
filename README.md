@@ -9,6 +9,7 @@ Desafios SQL utilizando postgresql.
 - Creación de tablas e importacion datos CSV.
 - Consultas 
 - SQL Joins
+- SQL Transaction
 
 ### Quiénes contribuyeron
 
