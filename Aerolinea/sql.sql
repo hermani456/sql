@@ -114,7 +114,7 @@ SELECT sum(boletos.precio) as ganancia_total
 FROM boletos 
 INNER JOIN vuelos ON boletos.vuelos_fk = vuelos.id;
 --Mostrar que vuelo tiene más asientos disponibles
-select * from vuelos where stock_asientos = (select max(stock_asientos) from vuelos) ;
+SELECT * FROM vuelos WHERE asientos_disponibles = (SELECT max(asientos_disponibles) FROM vuelos) ;
 -- Mostrar que vuelo tiene menos asientos disponibles
-select * from vuelos where stock_asientos = (select min(stock_asientos) from vuelos) ;
+SELECT * FROM vuelos WHERE asientos_disponibles = (SELECT min(asientos_disponibles) FROM vuelos) ;
 
